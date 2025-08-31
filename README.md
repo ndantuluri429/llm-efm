@@ -1,10 +1,17 @@
 # llm-efm
 
-Dedicated repostory for submission of "Establishing Large Language Model Baselines for Physiological Time Series: Insights from Intrapartum Electronic Fetal Monitoring" for TS4H Workshop NEURIPS 2025. 
+This repository contains the anonymized code and materials associated with our TS4H Workshop (NeurIPS 2025) submission:
+“Establishing Large Language Model Baselines for Physiological Time Series: Insights from Intrapartum Electronic Fetal Monitoring.”
 
-Prompt used to generate LLM analysis is: < >
+Contents
+LLM Prompting Framework:
+Prompt templates used for generating analyses with large language models (/prompts).
 
-Analysis, manual calculcation of time series metrics, and perofrmance is: <> 
+Raw Analysis & Manual Metrics:
+Scripts and notebooks for manual calculation of time-series features (baseline heart rate, variability, accelerations, decelerations) and evaluation metrics (/analysis).
 
-Interpretation Only Congfiuration analysis is: <>
-Here, the LLMs were provided with precomputed, summarized time-series metrics rather than raw tracings. The models applied FIGO guideline criteria to these structured inputs to generate floating-point pH estimates. Performance was quantified using RMSE, MAE, bias, and $R^2$ against the ground truth
+Performance Evaluation:
+Code for computing RMSE, MAE, bias, and $R^2$ against ground-truth physiological outcomes (/evaluation).
+
+Interpretation-Only Configuration:
+In this setting, LLMs are provided with pre-computed, summarized time-series metrics rather than raw tracings. The models apply FIGO guideline criteria to structured inputs to estimate fetal pH values. Performance is again assessed via RMSE, MAE, bias, and $R^2$ (/interpretation_only).
