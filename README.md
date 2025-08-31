@@ -4,18 +4,15 @@ This repository contains the anonymized code and materials associated with our T
 “Establishing Large Language Model Baselines for Physiological Time Series: Insights from Intrapartum Electronic Fetal Monitoring.”
 
 ## Repository Structure:
-### /prompts
+### /LLM-EFM-PROMPT
 Prompt templates used for zero-shot large language model (LLM) analysis of electronic fetal monitoring (EFM) time series.
 
-### /analysis
+### /LLM_annotation_analysis.py
 Scripts and notebooks for:
 Manual calculation of EFM time-series metrics (baseline FHR, variability, accelerations, decelerations, UC frequency).
-Comparative evaluation of model, expert, and ground-truth performance.
+Comparative evaluation of model, expert, and ground-truth performance. Also includes the code computing regression and classification metrics, including RMSE, MAE, bias, balanced accuracy, F1, and $R^2$.
 
-### /evaluation
-Code for computing regression and classification metrics, including RMSE, MAE, bias, balanced accuracy, F1, and $R^2$.
-
-### /interpretation_only
+### /interpretation_only_performance.py
 Implementation of the “interpretation-only” configuration.
 In this setting, LLMs are provided precomputed, structured summaries of CTG metrics instead of raw signals.
 Models apply FIGO guideline criteria to these summaries to generate floating-point pH estimates.
