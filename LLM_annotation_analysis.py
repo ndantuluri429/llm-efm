@@ -220,11 +220,7 @@ df = df.rename(columns={
     'uc_classification': 'uc_class_calc'
 })
 
-# Save to a specific folder in Drive
 df.to_csv('', index=False)
-
-# df.info()
-# df.head()
 
 """### Clean LLM results table"""
 
@@ -295,7 +291,6 @@ llm_df = pd.read_csv(llm_path)
 # Merge on 'PID' and 'step'
 merged_df = pd.merge(manual_df, llm_df, on=['PID', 'step'], how='inner')
 
-# Save to a specific folder in Drive
 merged_df.to_csv('', index=False)
 
 """## COMPARE MANUAL CALC. VS LLM RESULTS
