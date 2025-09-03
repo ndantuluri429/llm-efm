@@ -1,4 +1,4 @@
-# llm-efm (TS4H Workshop (NeurIPS 2025) submission)
+# llm-efm 
 
 This repository contains the anonymized code and materials associated with our TS4H Workshop (NeurIPS 2025) submission:
 “Establishing Large Language Model Baselines for Physiological Time Series: Insights from Intrapartum Electronic Fetal Monitoring.”
